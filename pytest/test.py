@@ -168,6 +168,14 @@ class Game:
 				self.drawStapleRandom(self.players[self.currentPlayer])
 			if(inp == 2):
 				self.drawOpenStaple(self.players[self.currentPlayer])
+			if(self.players[self.currentPlayer].getHandCardValue() == 10):
+				pass#TODO: Tausch
+			elif(self.players[self.currentPlayer].getHandCardValue() == 11):
+				pass#TODO: Drunter Gucken
+			elif(self.players[self.currentPlayer].getHandCardValue() == 12):
+				pass#TODO: Nochmal Ziehen
+			else:
+				pass#TODO: Normale Zahlenkarte
 			print("Your Handcard is: [" + str(self.players[self.currentPlayer].getHandcard()) + "]")
 			if(self.currentPlayer < (len(self.players) - 1)):
 				self.currentPlayer += 1
